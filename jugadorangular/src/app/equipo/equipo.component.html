@@ -1,0 +1,37 @@
+<form action="">
+    <div>
+        <label for="">dorsal
+            <input #dorsal type="number" name="cine">
+        </label>
+    </div>
+    <br>
+    <div>
+        <label for="">nombre_camisa
+            <input #nombre_camisa type="text" name="direccion">
+        </label>
+    </div>
+    <br>
+    <div>
+        <label for="">posicion
+            <input #posicion type="text" name="ciudad">
+        </label>
+    </div>
+    <br>
+    <div>
+        <label for="jugadores">EQUIPO
+            <select #jugador name="jugadores" >
+                <option value="0">SELECCIONE.....</option>
+                @for (item of jugadors; track $index) {
+                    <option value="{{item.id}}">{{item.nombre}}</option>
+                }
+            </select>
+        </label>
+    </div>
+    <br>
+    <div>
+        <button type="button" (click)="storeEquipo(dorsal,nombre_camisa,posicion,jugador)">REGISTRAR</button>
+    </div>
+</form>
+
+
+

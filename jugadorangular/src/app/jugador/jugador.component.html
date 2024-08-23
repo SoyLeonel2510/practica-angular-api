@@ -1,0 +1,29 @@
+<form action="">
+    <div>
+        <label for="">Cedula
+            <input #cedula type="text" name="cedula">
+        </label>
+    </div>
+    <br>
+    <div>
+        <label for="">Nombre
+            <input #nombre type="text" name="nombre">
+        </label>
+    </div>
+    <br>
+    <div>
+        <label for="">Edad
+            <input #edad type="text" name="edad">
+        </label>
+    </div>
+    <br>
+    <div>
+        <label for="">Equipo
+            <input #equipo_actual type="text" name="equipo_actual">
+        </label>
+    </div>
+    <br>
+    <div>
+        <button type="button" (click)="storeJugador(cedula,nombre,edad,equipo_actual)">REGISTRAR</button>
+    </div>
+</form>
